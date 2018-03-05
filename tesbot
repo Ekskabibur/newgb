@@ -6,11 +6,11 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token='ISI TOKEN KAMU')
+cl.login(token='EqUTMIfAkJpyTdtUkTI0.8Yc3rgzqX99L+IbVrXPqea./e0K5FeBc5oW7KKci+dVHKRjHYA15tbRWX9b0MxIWqE=')
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token='ISI TOKEN KAMU')
+ki.login(token='Eq6iNYpIwDzAyqWD28yd.SELnUjow3wY9CHKpnXWEZq.OVPVRsiiqTk/4sKkNrZGE0VMZntcu5KaR4sEQ2AHSWc=')
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
