@@ -18,8 +18,9 @@ class Channel:
     http_query_path = "/S4"
     channel_query_path = "/CH4"
 
-    UA = "IOSIPAD 8.8.2 HELLO-WORLD 12.0.2"
-    LA = "LINE/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0"
+
+    AppName/LA : IOSIPAD 8.2.2 HELLO-WORLD 12.0.2
+    UserAgent/UA : Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0
 
     authToken = None
     mid = None
