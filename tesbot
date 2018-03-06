@@ -674,6 +674,7 @@ def bot(op):
             elif "Battle Room " in msg.text:
 			bctxt = msg.text.replace("Battle Room", "")
 			cl.sendText(msg.to, "Room : " + (bctxt))
+
             elif "Spam " in msg.text:
 	    	if msg.from_ in admin:
 			    target = msg.text.replace("Spam ", "")
