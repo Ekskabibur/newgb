@@ -20,10 +20,10 @@ class Talk:
   host = "gd2.line.naver.jp";
   port = 443;
 
-  UA = "IOSIPAD 8.8.2 HELLO-WORLD 12.0.2"
-  LA = "LINE/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0"
+  AppName/LA : IOSIPAD 8.2.2 HELLO-WORLD 12.0.2
+  UserAgent/UA : Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0
 
-  authToken = None
+authToken = None
   cert = None
 
   def __init__(self):
