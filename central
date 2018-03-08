@@ -682,196 +682,199 @@ def bot(op):
                 for taf in a:
                   cl.sendText(taf, (bctxt))
       #--------------Fungsi Broadcast Finish-----------#
-        elif "Room : " in msg.text:
-            if wait("battle") == True:
-                bctxt = msg.text.replace("Room : ", "")
-                time.sleep(2.5)
-                cl.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki2.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki3.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki4.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki5.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki6.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki7.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki8.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki9.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki10.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki11.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki12.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki13.sendText(wait["server"], "/join " + (bctxt))
-                time.sleep(2.5)
-                ki14.sendText(wait["server"], "/join " + (bctxt))
-            else:
-                cl.sendText(admin, "Battle bot belum dinyalakan")
+            elif "Room : " in msg.text:
+                if wait("battle") == True:
+                    bctxt = msg.text.replace("Room : ", "")
+                    time.sleep(2.5)
+                    cl.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki2.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki3.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki4.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki5.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki6.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki7.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki8.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki9.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki10.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki11.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki12.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki13.sendText(wait["server"], "/join " + (bctxt))
+                    time.sleep(2.5)
+                    ki14.sendText(wait["server"], "/join " + (bctxt))
+                else:
+                    cl.sendText(admin, "Battle bot belum dinyalakan")
+    
+            elif msg.text.lower() == 'absen':
+                profile = ki2.getProfile()
+                text = profile.displayName + ""
+                ki2.sendText(msg.to, "2 " + text)
+                profile = ki3.getProfile()
+                text = profile.displayName + ""
+                ki3.sendText(msg.to, "3 " + text)
+                profile = ki4.getProfile()
+                text = profile.displayName + ""
+                ki4.sendText(msg.to, "4 " + text)
+                profile = ki5.getProfile()
+                text = profile.displayName + ""
+                ki5.sendText(msg.to, "5 " + text)
+                profile = ki6.getProfile()
+                text = profile.displayName + ""
+                ki6.sendText(msg.to, "6 " + text)
+                profile = ki7.getProfile()
+                text = profile.displayName + ""
+                ki7.sendText(msg.to, "7 " + text)
+                profile = ki8.getProfile()
+                text = profile.displayName + ""
+                ki8.sendText(msg.to, "8 " + text)
+                profile = ki9.getProfile()
+                text = profile.displayName + ""
+                ki9.sendText(msg.to, "9 " + text)
+                profile = ki10.getProfile()
+                text = profile.displayName + ""
+                ki10.sendText(msg.to, "10 " + text)
+                profile = ki11.getProfile()
+                text = profile.displayName + ""
+                ki11.sendText(msg.to, "11 " + text)
+                profile = ki12.getProfile()
+                text = profile.displayName + ""
+                ki12.sendText(msg.to, "12 " + text)
+                profile = ki13.getProfile()
+                text = profile.displayName + ""
+                ki13.sendText(msg.to, "13 " + text)
+                profile = ki14.getProfile()
+                text = profile.displayName + ""
+                ki14.sendText(msg.to, "14 " + text)
+    
+            elif "2say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("2say: ", "")
+                    ki2.sendText(msg.to, (bctxt))
+            elif "3say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("3say: ", "")
+                    ki3.sendText(msg.to, (bctxt))
+            elif "4say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("4say: ", "")
+                    ki4.sendText(msg.to, (bctxt))
+            elif "5say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("5say: ", "")
+                    ki5.sendText(msg.to, (bctxt))
+            elif "6say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("6say: ", "")
+                    ki6.sendText(msg.to, (bctxt))
+            elif "7say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("7say: ", "")
+                    ki7.sendText(msg.to, (bctxt))
+            elif "8say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("8say: ", "")
+                    ki8.sendText(msg.to, (bctxt))
+            elif "9say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("9say: ", "")
+                    ki9.sendText(msg.to, (bctxt))
+            elif "10say: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("10say: ", "")
+                    ki10.sendText(msg.to, (bctxt))
+            elif "Say11: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("Say11: ", "")
+                    ki11.sendText(msg.to, (bctxt))
+            elif "Say12: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("Say12: ", "")
+                    ki12.sendText(msg.to, (bctxt))
+            elif "Say13: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("Say13: ", "")
+                    ki13.sendText(msg.to, (bctxt))
+            elif "Say14: " in msg.text:
+                if msg.from_ in admin or Bots:
+                    bctxt = msg.text.replace("Say14: ", "")
+                    ki14.sendText(msg.to, (bctxt))
 
-        elif msg.text.lower() == 'absen':
-            profile = ki2.getProfile()
-            text = profile.displayName + ""
-            ki2.sendText(msg.to, "2 " + text)
-            profile = ki3.getProfile()
-            text = profile.displayName + ""
-            ki3.sendText(msg.to, "3 " + text)
-            profile = ki4.getProfile()
-            text = profile.displayName + ""
-            ki4.sendText(msg.to, "4 " + text)
-            profile = ki5.getProfile()
-            text = profile.displayName + ""
-            ki5.sendText(msg.to, "5 " + text)
-            profile = ki6.getProfile()
-            text = profile.displayName + ""
-            ki6.sendText(msg.to, "6 " + text)
-            profile = ki7.getProfile()
-            text = profile.displayName + ""
-            ki7.sendText(msg.to, "7 " + text)
-            profile = ki8.getProfile()
-            text = profile.displayName + ""
-            ki8.sendText(msg.to, "8 " + text)
-            profile = ki9.getProfile()
-            text = profile.displayName + ""
-            ki9.sendText(msg.to, "9 " + text)
-            profile = ki10.getProfile()
-            text = profile.displayName + ""
-            ki10.sendText(msg.to, "10 " + text)
-            profile = ki11.getProfile()
-            text = profile.displayName + ""
-            ki11.sendText(msg.to, "11 " + text)
-            profile = ki12.getProfile()
-            text = profile.displayName + ""
-            ki12.sendText(msg.to, "12 " + text)
-            profile = ki13.getProfile()
-            text = profile.displayName + ""
-            ki13.sendText(msg.to, "13 " + text)
-            profile = ki14.getProfile()
-            text = profile.displayName + ""
-            ki14.sendText(msg.to, "14 " + text)
+            elif msg.text.lower() == 'ping':
+                random.choice(KAC).sendText(msg.to,"Pang Ping Pung Peng Pong \nLu kira ini BBM")
 
-        elif "2say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("2say: ", "")
-                ki2.sendText(msg.to, (bctxt))
-        elif "3say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("3say: ", "")
-                ki3.sendText(msg.to, (bctxt))
-        elif "4say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("4say: ", "")
-                ki4.sendText(msg.to, (bctxt))
-        elif "5say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("5say: ", "")
-                ki5.sendText(msg.to, (bctxt))
-        elif "6say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("6say: ", "")
-                ki6.sendText(msg.to, (bctxt))
-        elif "7say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("7say: ", "")
-                ki7.sendText(msg.to, (bctxt))
-        elif "8say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("8say: ", "")
-                ki8.sendText(msg.to, (bctxt))
-        elif "9say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("9say: ", "")
-                ki9.sendText(msg.to, (bctxt))
-        elif "10say: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("10say: ", "")
-                ki10.sendText(msg.to, (bctxt))
-        elif "Say11: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("Say11: ", "")
-                ki11.sendText(msg.to, (bctxt))
-        elif "Say12: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("Say12: ", "")
-                ki12.sendText(msg.to, (bctxt))
-        elif "Say13: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("Say13: ", "")
-                ki13.sendText(msg.to, (bctxt))
-        elif "Say14: " in msg.text:
-            if msg.from_ in admin or Bots:
-                bctxt = msg.text.replace("Say14: ", "")
-                ki14.sendText(msg.to, (bctxt))
-
-        elif "Spam " in msg.text:
-                    target = msg.text.replace("Spam ", "")
-                    target2 = target.split()
-                    midd = target2[0]
-                    if target2[0] == "s1":
-                        midd = "ueff8f78401c867593c6ddc8aeb8c649d"
-                    elif target2[0] == "s2":
-                        midd = "u9fec89015e171bc9a8f82ce1ded83075"
-                    elif target2[0] == "s3":
-                        midd = "ubb4183ea6b5c541817eaa3e6a8c6acfe"
-                    else:
+            elif "Spam " in msg.text:
+                        target = msg.text.replace("Spam ", "")
+                        target2 = target.split()
                         midd = target2[0]
-                    jumlah = int(target2[1])
-                    pesan = str(target2[2]) + " " + str(target2[3])
-                    pesan = str(target2[2]) + " " + str(target2[3])
-                    if jumlah <= 100:
-                        for var in range(0, jumlah):
-                            if (pesan in [" ", " ", " ", " ", "/n", None]):
-                                pass
-                            else:
-                                cl.findAndAddContactsByMid(midd)
-                                cl.sendText(midd, pesan)
-                                ki.sendText(midd, pesan)
-                                ki2.sendText(midd, pesan)
-                                ki3.sendText(midd, pesan)
-                                ki4.sendText(midd, pesan)
-                                ki5.sendText(midd, pesan)
-                                ki6.sendText(midd, pesan)
-                                ki7.sendText(midd, pesan)
-                                ki8.sendText(midd, pesan)
-                                ki9.sendText(midd, pesan)
-                                ki10.sendText(midd, pesan)
-                                ki11.sendText(midd, pesan)
-                                ki12.sendText(midd, pesan)
-                                cl.sendText(msg.to, "Sukses")
-                                print "[notif] Spam chat Mid sukses"
+                        if target2[0] == "s1":
+                            midd = "ueff8f78401c867593c6ddc8aeb8c649d"
+                        elif target2[0] == "s2":
+                            midd = "u9fec89015e171bc9a8f82ce1ded83075"
+                        elif target2[0] == "s3":
+                            midd = "ubb4183ea6b5c541817eaa3e6a8c6acfe"
                         else:
-                            cl.sendText(msg.to, "Tidak bisa lebih dari seratus")
-        elif msg.text in ["Tagall"]:
-                    if msg.from_ in admin or Bots:
-                        group = cl.getGroup(msg.to)
-                        nama = [contact.mid for contact in group.members]
-                        cb = ""
-                        cb2 = ""
-                        strt = int(0)
-                        akh = int(0)
-                        for md in nama:
-                            akh = akh + int(5)
-                            cb += """{"S":""" + json.dumps(str(strt)) + ""","E":""" + json.dumps(
-                                str(akh)) + ""","M":""" + json.dumps(md) + "},"""
-                            strt = strt + int(6)
-                            akh = akh + 1
-                            cb2 += "@nrik\n"
-                        cb = (cb[:int(len(cb) - 1)])
-                        msg.contentType = 0
-                        msg.text = cb2
-                        msg.contentMetadata = {'MENTION': '{"MENTIONEES":[' + cb + ']}', 'EMTVER': '4'}
-                        try:
-                            cl.sendMessage(msg)
-                        except Exception as error:
-                            print error
-                            # -----------------------------------------------
+                            midd = target2[0]
+                        jumlah = int(target2[1])
+                        pesan = str(target2[2]) + " " + str(target2[3])
+                        pesan = str(target2[2]) + " " + str(target2[3])
+                        if jumlah <= 100:
+                            for var in range(0, jumlah):
+                                if (pesan in [" ", " ", " ", " ", "/n", None]):
+                                    pass
+                                else:
+                                    cl.findAndAddContactsByMid(midd)
+                                    cl.sendText(midd, pesan)
+                                    ki.sendText(midd, pesan)
+                                    ki2.sendText(midd, pesan)
+                                    ki3.sendText(midd, pesan)
+                                    ki4.sendText(midd, pesan)
+                                    ki5.sendText(midd, pesan)
+                                    ki6.sendText(midd, pesan)
+                                    ki7.sendText(midd, pesan)
+                                    ki8.sendText(midd, pesan)
+                                    ki9.sendText(midd, pesan)
+                                    ki10.sendText(midd, pesan)
+                                    ki11.sendText(midd, pesan)
+                                    ki12.sendText(midd, pesan)
+                                    cl.sendText(msg.to, "Sukses")
+                                    print "[notif] Spam chat Mid sukses"
+                            else:
+                                cl.sendText(msg.to, "Tidak bisa lebih dari seratus")
+            elif msg.text in ["Tagall"]:
+                        if msg.from_ in admin or Bots:
+                            group = cl.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            cb = ""
+                            cb2 = ""
+                            strt = int(0)
+                            akh = int(0)
+                            for md in nama:
+                                akh = akh + int(5)
+                                cb += """{"S":""" + json.dumps(str(strt)) + ""","E":""" + json.dumps(
+                                    str(akh)) + ""","M":""" + json.dumps(md) + "},"""
+                                strt = strt + int(6)
+                                akh = akh + 1
+                                cb2 += "@nrik\n"
+                            cb = (cb[:int(len(cb) - 1)])
+                            msg.contentType = 0
+                            msg.text = cb2
+                            msg.contentMetadata = {'MENTION': '{"MENTIONEES":[' + cb + ']}', 'EMTVER': '4'}
+                            try:
+                                cl.sendMessage(msg)
+                            except Exception as error:
+                                print error
+                                # -----------------------------------------------
 
                             #------------ Keluarin Bot----------------------#
             elif msg.text in ["Bot out","@bye"]: # Keluar Dari Semua Group Yang Di dalem nya  ada bot(Kalo Bot Kalian Nyangkut di Group lain :D)
