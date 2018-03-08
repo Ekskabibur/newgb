@@ -5,37 +5,27 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
+
 cl = LINETCR.LINE()
-cl.login(token='ISI TOKEN KAMU')
+cl.login(token='Eq2DvUvNNWaxTKfx2gFd.SELnUjow3wY9CHKpnXWEZq.c4CNKuwynX0P21RohJlZT0RjRhPz5zucwd7AjM34nJ8=')
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token='ISI TOKEN KAMU')
+ki.login(token='EqAVtSv6q7ekSFuFudc3.5FUaoDqbRourxQvOXurpeW.Im50xBfJJbs+AyVFnerxdSQjLOA1096+4q8u6LHzPH4=')
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token='ISI TOKEN KAMU')
+ki2.login(token='EqlpWa6c56AnBt4N9Nr3.q755/APAmye348Cnpw3BqW.L0V1SdwH99xL1waLqtyyXamv09ZIxmpIFkhlWioAnlw=')
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token='ISI TOKEN KAMU')
+ki3.login(token='EqTSx2k0RDJmJEmDFOo2.aTn8MntboFIbYZraIpPsmG.8aubSp1PXxFVv1TK2XCkuI6GmYKomGj4OZozDXgexTE=')
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token='ISI TOKEN KAMU')
+ki4.login(token='EqkCuRQo2voatXtFdJ09./h7DfMMh2OZJ6qx4+R9moq.3LK4ewuLkoMXVNw71d1hRR0sK4tj6fJsDRPk9+bLGvU=')
 ki4.loginResult()
 
-ki5 = LINETCR.LINE()
-ki5.login(token='ISI TOKEN KAMU')
-ki5.loginResult()
-
-ki6 = LINETCR.LINE()
-ki6.login(token='ISI TOKEN KAMU')
-ki6.loginResult()
-
-ki7 = LINETCR.LINE()
-ki7.login(token='ISI TOKEN KAMU')
-ki7.loginResult()
 print "Login Bot"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -57,11 +47,8 @@ kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
 ki3mid = ki3.getProfile().mid
 ki4mid = ki4.getProfile().mid
-ki5mid = ki5.getProfile().mid
-ki6mid = ki6.getProfile().mid
-ki7mid = ki7.getProfile().mid
 
-Bots=[mid, kimid, ki2mid, ki3mid,ki4mid,ki5mid,ki6mid,ki7mid]
+Bots=[mid, kimid, ki2mid, ki3mid,ki4mid]
 admin=["ub1e94db89396dd6cbd72190f371c1ecd"]
 wait = {
     'contact':False,
@@ -661,12 +648,6 @@ def bot(op):
                     time.sleep(2.5)
                     ki4.sendText("ueff8f78401c867593c6ddc8aeb8c649d", "/join " + (bctxt))
                     time.sleep(2.5)
-                    ki5.sendText("ueff8f78401c867593c6ddc8aeb8c649d", "/join " + (bctxt))
-                    time.sleep(2.5)
-                    ki6.sendText("ueff8f78401c867593c6ddc8aeb8c649d", "/join " + (bctxt))
-                    time.sleep(2.5)
-                    ki7.sendText("ueff8f78401c867593c6ddc8aeb8c649d", "/join " + (bctxt))
-                    time.sleep(2.5)
                     
             elif msg.text.lower() == 'absen':
                 profile = ki2.getProfile()
@@ -678,15 +659,6 @@ def bot(op):
                 profile = ki4.getProfile()
                 text = profile.displayName + ""
                 ki4.sendText(msg.to, "4 " + text)
-                profile = ki5.getProfile()
-                text = profile.displayName + ""
-                ki5.sendText(msg.to, "5 " + text)
-                profile = ki6.getProfile()
-                text = profile.displayName + ""
-                ki6.sendText(msg.to, "6 " + text)
-                profile = ki7.getProfile()
-                text = profile.displayName + ""
-                ki7.sendText(msg.to, "7 " + text)
                 
             elif "2say: " in msg.text:
                 if msg.from_ in admin or Bots:
@@ -700,18 +672,6 @@ def bot(op):
                 if msg.from_ in admin or Bots:
                     bctxt = msg.text.replace("4say: ", "")
                     ki4.sendText(msg.to, (bctxt))
-            elif "5say: " in msg.text:
-                if msg.from_ in admin or Bots:
-                    bctxt = msg.text.replace("5say: ", "")
-                    ki5.sendText(msg.to, (bctxt))
-            elif "6say: " in msg.text:
-                if msg.from_ in admin or Bots:
-                    bctxt = msg.text.replace("6say: ", "")
-                    ki6.sendText(msg.to, (bctxt))
-            elif "7say: " in msg.text:
-                if msg.from_ in admin or Bots:
-                    bctxt = msg.text.replace("7say: ", "")
-                    ki7.sendText(msg.to, (bctxt))
             
             elif msg.text.lower() == 'ping':
                 random.choice(KAC).sendText(msg.to,"Pang Ping Pung Peng Pong \nLu kira ini BBM")
@@ -742,9 +702,6 @@ def bot(op):
                                     ki2.sendText(midd, pesan)
                                     ki3.sendText(midd, pesan)
                                     ki4.sendText(midd, pesan)
-                                    ki5.sendText(midd, pesan)
-                                    ki6.sendText(midd, pesan)
-                                    ki7.sendText(midd, pesan)
                                     cl.sendText(msg.to, "Sukses")
                                     print "[notif] Spam chat Mid sukses"
                             else:
