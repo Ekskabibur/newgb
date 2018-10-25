@@ -9,9 +9,7 @@ cl = LINETCR.LINE()
 cl.login(token='Eq2DvUvNNWaxTKfx2gFd.SELnUjow3wY9CHKpnXWEZq.c4CNKuwynX0P21RohJlZT0RjRhPz5zucwd7AjM34nJ8=')
 cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(token='EqAVtSv6q7ekSFuFudc3.5FUaoDqbRourxQvOXurpeW.Im50xBfJJbs+AyVFnerxdSQjLOA1096+4q8u6LHzPH4=')
-ki.loginResult()
+ki = ki1 = ki2 = ki3 = cl
 
 helpMessage ="""-==================-
      Ferians Bot Sider
