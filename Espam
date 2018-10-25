@@ -13,17 +13,6 @@ ki = LINETCR.LINE()
 ki.login(token='EqAVtSv6q7ekSFuFudc3.5FUaoDqbRourxQvOXurpeW.Im50xBfJJbs+AyVFnerxdSQjLOA1096+4q8u6LHzPH4=')
 ki.loginResult()
 
-ki2 = LINETCR.LINE()
-ki2.login(token='EqlpWa6c56AnBt4N9Nr3.q755/APAmye348Cnpw3BqW.L0V1SdwH99xL1waLqtyyXamv09ZIxmpIFkhlWioAnlw=')
-ki2.loginResult()
-
-ki3 = LINETCR.LINE()
-ki3.login(token='EqTSx2k0RDJmJEmDFOo2.aTn8MntboFIbYZraIpPsmG.8aubSp1PXxFVv1TK2XCkuI6GmYKomGj4OZozDXgexTE=')
-ki3.loginResult()
-
-ki4 = LINETCR.LINE()
-ki4.login(token='EqkCuRQo2voatXtFdJ09./h7DfMMh2OZJ6qx4+R9moq.3LK4ewuLkoMXVNw71d1hRR0sK4tj6fJsDRPk9+bLGvU=')
-ki4.loginResult()
 helpMessage ="""-==================-
      Ferians Bot Sider
 -==================-
